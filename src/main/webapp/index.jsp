@@ -37,7 +37,16 @@
                 type:"get",
                 dataType:"json",
                 success:function(result){
-
+                    let html = ""
+                    $.each(result.showcaseList,function (i,n){
+                        html += '<tr>'
+                        html += '	<td>'+n.chinese+'</td>'
+                        html += '	<td>'+n.english+'</td>'
+                        html += '	<td>'+n.content+'</td>'
+                        html += '	<td>'+n.tag+'</td>'
+                        html += '</tr>'
+                    })
+                    $("#ContentBody").html(html)
                 }
             })
         }
@@ -50,5 +59,17 @@
         <button class="btn btn-default" id="search_button" type="button" data-dismiss="alert">Go!</button>
       </span>
     </div>
+    <table class="table table-hover">
+        <thead>
+        <tr style="color: #B3B3B3;">
+            <td>中文</td>
+            <td>英文</td>
+            <td>内容</td>
+            <td>标签</td>
+        </tr>
+        </thead>
+        <tbody id="ContentBody">
+        </tbody>
+    </table>
 </body>
 </html>
