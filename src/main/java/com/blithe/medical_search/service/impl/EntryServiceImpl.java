@@ -69,6 +69,11 @@ public class EntryServiceImpl implements EntryService {
         //         }
         //     }
         // }
+        if(ids.size() == 0){
+            map.put("count",0);
+            map.put("showcaseList",null);
+            return map;
+        }
         List<DisplayVo> displayVos = entryDao.findAllExplain(ids);
         map.put("count",displayVos.size());
         map.put("showcaseList",displayVos);

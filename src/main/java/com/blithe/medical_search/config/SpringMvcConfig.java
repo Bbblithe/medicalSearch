@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  */
 
 @Configuration
-@ComponentScan("com.blithe.medical_search.controller")
+@ComponentScan({"com.blithe.medical_search.controller","com.blithe.medical_search.config"})
 @EnableWebMvc
 public class SpringMvcConfig {
 }

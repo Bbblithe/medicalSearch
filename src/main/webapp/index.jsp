@@ -12,33 +12,32 @@
     <script type="text/javascript" src="jquery/jquery-1.11.1-min.js"></script>
     <script type="text/javascript" src="jquery/bootstrap_3.3.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-        $("#search_button").click(function(){
-            search()
-        })
-        $(window).keydown(function (event){
-            if(event.keyCode == 13){
+        $(function (){
+            $("#search_button").click(function(){
                 search()
-            }
-        })
+            })
+            $(window).keydown(function (event){
+                if(event.keyCode == 13){
+                    search()
+                }
+            })
+        });
 
         function search(){
-            let string = $.trim($("#search_text"))
-            if(string == "") {
+            let string = $.trim($("#search_text").val())
+            if(string === "") {
                 alert("请输入有效问题")
                 return false;
             }
             $.ajax({
                 url:"entry/search.do",
                 data:{
-                    "Question":string
+                    "sentence":string
                 },
-                type:"post",
+                type:"get",
                 dataType:"json",
                 success:function(result){
-                    // {count:10,
-                    // showcaseList:{
-                    // },
-                    // }
+
                 }
             })
         }
@@ -48,8 +47,8 @@
     <div class="input-group">
         <input type="text" class="form-control" id="search_text" placeholder="搜索问题（支持中文/Eng）">
         <span class="input-group-btn">
-        <button class="btn btn-default" id="search_button" type="button">Go!</button>
+        <button class="btn btn-default" id="search_button" type="button" data-dismiss="alert">Go!</button>
       </span>
-    </div><!-- /input-group -->
+    </div>
 </body>
 </html>

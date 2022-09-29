@@ -13,7 +13,7 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @ComponentScan({"com.blithe.medical_search.service"})
-@PropertySource("jdbc.properties")
+@PropertySource("classpath:jdbc.properties")
 @Import({JdbcConfig.class,MyBatisConfig.class})
 public class SpringConfig {
 }
