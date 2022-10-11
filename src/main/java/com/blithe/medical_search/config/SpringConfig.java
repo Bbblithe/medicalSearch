@@ -14,6 +14,7 @@ import org.springframework.context.annotation.PropertySource;
 @Configuration
 @ComponentScan({"com.blithe.medical_search.service"})
 @PropertySource("classpath:jdbc.properties")
+@PropertySource("classpath:segment_dict.txt")
 @Import({JdbcConfig.class,MyBatisConfig.class})
 public class SpringConfig {
 }

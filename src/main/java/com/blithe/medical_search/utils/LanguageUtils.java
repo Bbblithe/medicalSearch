@@ -2,6 +2,7 @@ package com.blithe.medical_search.utils;
 
 import com.github.houbb.segment.bs.SegmentBs;
 import com.github.houbb.segment.support.format.impl.SegmentFormats;
+import com.github.houbb.segment.support.segment.mode.impl.SegmentModes;
 import com.github.houbb.segment.support.segment.result.impl.SegmentResultHandlers;
 
 import java.util.ArrayList;
@@ -15,12 +16,12 @@ import java.util.StringTokenizer;
  */
 
 public class LanguageUtils {
-   public static List<String> chineseParticiple(String sentence){
-      List<String> defaultWords = SegmentBs.newInstance()
+   public static List<String>  chineseParticiple(String sentence){
+      List<String> resultList = SegmentBs.newInstance()
+              .segmentMode(SegmentModes.dict())
               .segmentFormat(SegmentFormats.chineseSimple())
-              .segment(sentence, SegmentResultHandlers.word());
-      defaultWords.add(sentence);
-      return defaultWords;
+              .segment(sentence,SegmentResultHandlers.word());
+      return resultList;
    }
 
    public static List<String> englishParticiple(String sentence){
