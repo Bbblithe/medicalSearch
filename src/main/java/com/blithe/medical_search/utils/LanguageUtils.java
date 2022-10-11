@@ -15,19 +15,21 @@ import java.util.StringTokenizer;
  */
 
 public class LanguageUtils {
-   public static List<String> ChineseParticiple(String sentence){
+   public static List<String> chineseParticiple(String sentence){
       List<String> defaultWords = SegmentBs.newInstance()
               .segmentFormat(SegmentFormats.chineseSimple())
               .segment(sentence, SegmentResultHandlers.word());
+      defaultWords.add(sentence);
       return defaultWords;
    }
 
-   public static List<String> EnglishParticiple(String sentence){
+   public static List<String> englishParticiple(String sentence){
       StringTokenizer st = new StringTokenizer(sentence," ,?.!:\"\"''\n#");
       List<String> wordList = new ArrayList<>();
       while (st.hasMoreElements()) {
-         wordList.add(st.nextToken().toLowerCase());
+         wordList.add(st.nextToken());
       }
+      wordList.add(sentence);
       return wordList;
    }
 

@@ -29,47 +29,42 @@
                 alert("请输入有效问题")
                 return false;
             }
-            $.ajax({
-                url:"entry/search.do",
-                data:{
-                    "sentence":string
-                },
-                type:"get",
-                dataType:"json",
-                success:function(result){
-                    let html = ""
-                    $.each(result.showcaseList,function (i,n){
-                        html += '<tr>'
-                        html += '	<td>'+n.chinese+'</td>'
-                        html += '	<td>'+n.english+'</td>'
-                        html += '	<td>'+n.content+'</td>'
-                        html += '	<td>'+n.tag+'</td>'
-                        html += '</tr>'
-                    })
-                    $("#ContentBody").html(html)
-                }
-            })
+            window.location.href = 'entry/search.do?sentence='+string
+            // $.ajax({
+            //     url:"entry/search.do",
+            //     data:{
+            //         "sentence":string
+            //     },
+            //     type:"get",
+            //     dataType:"json",
+            //     success:function(result){
+            //         let html = ""
+            //         $.each(result.showcaseList,function (i,n){
+            //             html += '<tr>'
+            //             html += '	<td>'+n.chinese+'</td>'
+            //             html += '	<td>'+n.english+'</td>'
+            //             html += '	<td>'+n.content+'</td>'
+            //             html += '	<td>'+n.tag+'</td>'
+            //             html += '</tr>'
+            //         })
+            //         $("#ContentBody").html(html)
+            //     }
+            // })
         }
     </script>
 </head>
 <body>
-    <div class="input-group">
-        <input type="text" class="form-control" id="search_text" placeholder="搜索问题（支持中文/Eng）">
-        <span class="input-group-btn">
-        <button class="btn btn-default" id="search_button" type="button" data-dismiss="alert">Go!</button>
-      </span>
+    <h2 style="margin: 0 auto;text-align: center">CaWWE：For management of childbearing-age women with epilepsy
+        <br>专注育龄期癫痫女性患者的管理
+    </h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="width: 800px; margin: 0 auto">
+        <img width="50px" src="img/bar.png">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <input id="search_text" type="text" class="glyphicon-search" style="width: 500px;" placeholder="请输入你的问题?/Please enter your question?">
+         <button id="search_button" class="btn btn-default">搜索/search</button>
     </div>
-    <table class="table table-hover">
-        <thead>
-        <tr style="color: #B3B3B3;">
-            <td>中文</td>
-            <td>英文</td>
-            <td>内容</td>
-            <td>标签</td>
-        </tr>
-        </thead>
-        <tbody id="ContentBody">
-        </tbody>
-    </table>
 </body>
 </html>

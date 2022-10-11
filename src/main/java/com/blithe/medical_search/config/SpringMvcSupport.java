@@ -15,5 +15,6 @@ public class SpringMvcSupport extends WebMvcConfigurationSupport {
     @Override
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/jquery/**").addResourceLocations("/jquery/");
+        registry.addResourceHandler("/img/**").addResourceLocations("/img/");
     }
 }

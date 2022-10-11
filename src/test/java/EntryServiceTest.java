@@ -26,7 +26,7 @@ public class EntryServiceTest {
 
     @Test
     public void testShowAll(){
-        for(DisplayVo vo:(List<DisplayVo>)entryService.showAllExplain(LanguageUtils.ChineseParticiple("你好我今天很开心，但是摔了一交很难受，呜呜"),false).get("showcaseList")){
+        for(DisplayVo vo:(List<DisplayVo>)entryService.showAllExplain(LanguageUtils.chineseParticiple("你好我今天很开心，但是摔了一交很难受，呜呜"),false).get("showcaseList")){
             System.out.println(vo);
         }
     }

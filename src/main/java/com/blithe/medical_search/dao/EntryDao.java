@@ -20,7 +20,7 @@ public interface EntryDao {
     @Select("select id,chinese,english,synId from table_entry where Chinese = #{word}")
     public Entry chineseQueryId(String word);
 
-    @Select("select id,chinese,english,synId from table_entry where English = #{word}")
+    @Select("select id,chinese,english,synId from table_entry where BINARY English = #{word}")
     public Entry englishQueryId(String word);
 
     @Select("select id from table_entry_relationship where fatherId = #{id} ")

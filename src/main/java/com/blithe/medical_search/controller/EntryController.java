@@ -6,7 +6,7 @@ import com.blithe.medical_search.utils.LanguageUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Map;
 
@@ -24,14 +24,17 @@ public class EntryController {
     private EntryService entryService;
 
     @RequestMapping("/search")
-    @ResponseBody
-    public Map<String,Object> getEntryExplain(String sentence){
+    public ModelAndView getEntryExplain(String sentence){
+        ModelAndView mv = new ModelAndView();
+        mv.addObject("question",sentence);
         Map<String,Object> map;
         if(LanguageUtils.isEnglish(sentence)){
-            map = entryService.showAllExplain(LanguageUtils.EnglishParticiple(sentence),true);
+            map = entryService.showAllExplain(LanguageUtils.englishParticiple(sentence),true);
         }else {
-            map = entryService.showAllExplain(LanguageUtils.ChineseParticiple(sentence),false);
+            map = entryService.showAllExplain(LanguageUtils.chineseParticiple(sentence),false);
         }
-        return map;
+        mv.addObject("map",map);
+        mv.setViewName("/showcase.jsp");
+        return mv;
     }
 }
