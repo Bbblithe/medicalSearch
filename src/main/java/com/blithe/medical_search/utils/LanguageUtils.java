@@ -1,7 +1,6 @@
 package com.blithe.medical_search.utils;
 
 import com.github.houbb.segment.bs.SegmentBs;
-import com.github.houbb.segment.support.format.impl.SegmentFormats;
 import com.github.houbb.segment.support.segment.mode.impl.SegmentModes;
 import com.github.houbb.segment.support.segment.result.impl.SegmentResultHandlers;
 
@@ -19,7 +18,6 @@ public class LanguageUtils {
    public static List<String>  chineseParticiple(String sentence){
       List<String> resultList = SegmentBs.newInstance()
               .segmentMode(SegmentModes.dict())
-              .segmentFormat(SegmentFormats.chineseSimple())
               .segment(sentence,SegmentResultHandlers.word());
       return resultList;
    }
