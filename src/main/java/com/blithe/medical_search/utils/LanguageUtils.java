@@ -1,7 +1,6 @@
 package com.blithe.medical_search.utils;
 
 import com.github.houbb.segment.bs.SegmentBs;
-import com.github.houbb.segment.support.format.impl.SegmentFormats;
 import com.github.houbb.segment.support.segment.mode.impl.SegmentModes;
 import com.github.houbb.segment.support.segment.result.impl.SegmentResultHandlers;
 
@@ -16,21 +15,19 @@ import java.util.StringTokenizer;
  */
 
 public class LanguageUtils {
-   public static List<String>  chineseParticiple(String sentence){
-      List<String> resultList = SegmentBs.newInstance()
-              .segmentMode(SegmentModes.dict())
-              .segmentFormat(SegmentFormats.chineseSimple())
-              .segment(sentence,SegmentResultHandlers.word());
-      return resultList;
-   }
-
-   public static List<String> englishParticiple(String sentence){
-      StringTokenizer st = new StringTokenizer(sentence," ,?.!:\"\"''\n#");
+   public static List<String>  Participle(String sentence){
       List<String> wordList = new ArrayList<>();
-      while (st.hasMoreElements()) {
-         wordList.add(st.nextToken());
+      if(isEnglish(sentence)){
+         StringTokenizer st = new StringTokenizer(sentence," ,?.!:\"\"''\n#");
+         while (st.hasMoreElements()) {
+            wordList.add(st.nextToken());
+         }
+         wordList.add(sentence);
+         return wordList;
       }
-      wordList.add(sentence);
+      wordList = SegmentBs.newInstance()
+              .segmentMode(SegmentModes.dict())
+              .segment(sentence,SegmentResultHandlers.word());
       return wordList;
    }
 

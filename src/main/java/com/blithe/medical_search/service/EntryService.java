@@ -14,5 +14,7 @@ public interface EntryService {
      * 处理分词组件分词的词组进行查询，并返回存在数据库的所有指导会议等
      * @return 返回的是所有的相关词条的guidance等
      */
-    public Map<String,Object> showAllExplain(List<String> words,boolean flag);
+    public Map<String,Object> showAllExplain(String sentence,boolean flag) throws Exception;
+
+    public List<String> showRe();
 }

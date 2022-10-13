@@ -39,6 +39,7 @@
     </c:if>
     <c:if test="${map.count==0}">
         <h3 style="color: lightslategrey">没有相关解答/no related answer</h3>
+        <button id="back">返回查询</button>
     </c:if>
 </div>
 </body>
