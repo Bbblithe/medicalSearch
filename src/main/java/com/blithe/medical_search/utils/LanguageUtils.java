@@ -25,9 +25,13 @@ public class LanguageUtils {
          wordList.add(sentence);
          return wordList;
       }
+
       wordList = SegmentBs.newInstance()
               .segmentMode(SegmentModes.dict())
               .segment(sentence,SegmentResultHandlers.word());
+      if(sentence.contains("卡马西平")){
+         wordList.add("卡马西平");
+      }
       return wordList;
    }
 

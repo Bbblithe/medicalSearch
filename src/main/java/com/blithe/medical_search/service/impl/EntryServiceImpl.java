@@ -66,7 +66,6 @@ public class EntryServiceImpl implements EntryService {
             }
         }else{
             recm.setCount(recm.getCount() + 1);
-            System.out.println(recm.getCount());
             if( entryDao.updateCount(recm) > 1){
                 throw new Exception("添加推荐数量错误");
             }
