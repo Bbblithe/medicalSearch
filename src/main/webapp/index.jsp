@@ -11,7 +11,6 @@
 <script type="text/javascript" src="jquery/bootstrap_3.3.0/js/bootstrap.min.js"></script>
 <script type="text/javascript">
   $(function (){
-    showRecommendation();
     $("#search").click(function(){
       search()
     })
@@ -31,21 +30,6 @@
     window.location.href = 'entry/search.do?sentence='+string
   }
 
-  function showRecommendation(){
-    $.ajax({
-      url:"entry/recommend",
-      type:"get",
-      dataType:"json",
-      success:function(data){
-        let html = ""
-        $.each(data,function(i,n){
-          html += '<a style="text-decoration: none; cursor: pointer;" onclick="window.location.href=\'entry/search.do?sentence='+n+'\';">'+n+'</a>';
-          html += '<br> <br>'
-        })
-        $("#recommendation").html(html)
-      }
-    })
-  }
 </script>
 <html lang="en">
 <head>
@@ -78,10 +62,26 @@
     <span class="English">Ask questions like：</span>
   </div>
   <div class="right" id="recommendation">
+    <br><br>
+    <a style="text-decoration: none; cursor: pointer;" onclick="window.location.href='entry/search.do?sentence=妊娠期抗癫痫治疗的注意事项'">妊娠期抗癫痫治疗的注意事项</a>
+    <a style="text-decoration: none; cursor: pointer; font-size: 15px" onclick="window.location.href='entry/search.do?sentence=Anti-epileptic treatment during Pregnancy'" >Anti-epileptic treatment during pregnancy</a>
+    <br>
+    <a style="text-decoration: none; cursor: pointer;" onclick="window.location.href='entry/search.do?sentence=哺乳期是否可以服用左乙拉西坦'">哺乳期是否可以服用左乙拉西坦</a>
+    <a style="text-decoration: none; cursor: pointer; font-size: 15px" onclick="window.location.href='entry/search.do?sentence=Can patients take Levetiracetam while breastfeeding'" >Can patients take levetiracetam while breastfeeding</a>
+    <br>
+    <a style="text-decoration: none; cursor: pointer;" onclick="window.location.href='entry/search.do?sentence=可能导致肥胖的抗癫痫药物'">可能导致肥胖的抗癫痫药物</a>
+    <a style="text-decoration: none; cursor: pointer; font-size: 15px" onclick="window.location.href='entry/search.do?sentence=Antiseizure medications  causing obesity'" >Anti-epileptic drugs causing obesity</a>
+    <br>
+    <a style="text-decoration: none; cursor: pointer;" onclick="window.location.href='entry/search.do?sentence=丙戊酸钠是否有致畸性'">丙戊酸钠是否有致畸性</a>
+    <a style="text-decoration: none; cursor: pointer; font-size: 15px" onclick="window.location.href='entry/search.do?sentence=Sodium valproate'" >Does Sodium valproate have teratogenicity</a>
+    <br>
+    <a style="text-decoration: none; cursor: pointer;" onclick="window.location.href='entry/search.do?sentence=了解更多：卡马西平'">了解更多：卡马西平</a>
+    <a style="text-decoration: none; cursor: pointer; font-size: 15px" onclick="window.location.href='entry/search.do?sentence=Learn more about Carbamazepine'" >Learn more about Carbamazepine</a>
+    <br>
   </div>
 </div>
 <!-- 页脚 -->
-<div class="foot Wrapper">
+<div class="foot Wrapper" style="position: fixed;bottom: 0">
   <span>联系我们/Contact us：leilei_25@126.com | 访问我们的本体/About our ontology：<a href="https://bioportal.bioontology.org/ontologies/CAWWEO">https://bioportal.bioontology.org/ontologies/CAWWEO</a></span>
 </div>
 </body>

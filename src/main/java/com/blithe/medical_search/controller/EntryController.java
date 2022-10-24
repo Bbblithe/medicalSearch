@@ -6,10 +6,8 @@ import com.blithe.medical_search.utils.LanguageUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -38,11 +36,5 @@ public class EntryController {
         mv.addObject("map",map);
         mv.setViewName("/showcase.jsp");
         return mv;
-    }
-
-    @RequestMapping("/recommend")
-    @ResponseBody
-    public List<String> getRecommendations(){
-        return entryService.showRe();
     }
 }

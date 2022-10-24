@@ -27,24 +27,22 @@
 <!-- Title标题 -->
 <div class="Title Middle">
   <div>
-    <span class="Question">您的问题：</span><span class="Question">${question}</span>
+    <span class="Question">您的问题/Your Question：</span><span class="Question">${question}</span>
   </div>
-  <div>
-    <span class="QuestionEnglish">Your question:</span><span class="QuestionEnglish">1111</span>
-  </div>
+
   <div class="AnswerTitle">
     <span style="font-size: 25px" id="possible">
       可能的答案：
+    </span>
+    <br>
+    <span id="e_Possible">
+      Possible answer:
     </span>
   </div>
 </div>
 
 <!-- 解答内容 -->
 <c:if test="${map.count!=0}">
-  <h4 class="AnswerEnglish">
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    Possible answer:
-  </h4>
   <div class="Content Middle">
       <c:forEach items="${map.showcaseList}" var="a">
         <div class="Answer">
@@ -57,16 +55,14 @@
 <c:if test="${map.count==0}">
   <script type="text/javascript">
     $("#possible").append('<span style="color: lightslategrey">暂时没有相关解答</span>')
+    $("#e_Possible").append('<span style="color: lightslategrey">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp' +
+            ' no relevant answer</span>')
   </script>
-  <span style="font-size: 21px" class="AnswerEnglish">
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    Possible answer:
-  </span>
-  <span style="font-size: 20px;color: slategrey">no relevant answer</span>
 </c:if>
 
-<div class="foot Wrapper" style="position: fixed;bottom: 0">
-  <span>联系我们/Contact us：leilei_25@126.com | 访问我们的本体/About our ontology：<a href="https://bioportal.bioontology.org/ontologies/CAWWEO">https://bioportal.bioontology.org/ontologies/CAWWEO</a></span>
+<div class="foot" style="position: fixed;bottom: 0">
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    联系我们/Contact us：leilei_25@126.com | 访问我们的本体/About our ontology：<a href="https://bioportal.bioontology.org/ontologies/CAWWEO">https://bioportal.bioontology.org/ontologies/CAWWEO</a></span>
 </div>
 <div class="bottom_right">
   <img src="img/search_button.png" onclick="window.location.href = 'index.jsp'">

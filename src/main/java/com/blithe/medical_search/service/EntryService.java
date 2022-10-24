@@ -1,6 +1,5 @@
 package com.blithe.medical_search.service;
 
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -15,6 +14,4 @@ public interface EntryService {
      * @return 返回的是所有的相关词条的guidance等
      */
     public Map<String,Object> showAllExplain(String sentence,boolean flag) throws Exception;
-
-    public List<String> showRe();
 }

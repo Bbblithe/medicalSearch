@@ -45,9 +45,6 @@ public interface EntryDao {
     @Select("select sentence,count from table_recm where sentence=#{sentence}")
     public Recm searchSentence(String sentence);
 
-    @Select("select sentence from table_recm order by count desc limit 0,4")
-    public List<String> showRecommendations();
-
     @Insert("insert into table_recm values(#{sentence},1)")
     public int addRecommendation(String sentence);
     @Update("update table_recm set count=#{count} where sentence=#{sentence} ")

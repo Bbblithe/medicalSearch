@@ -75,8 +75,4 @@ public class EntryServiceImpl implements EntryService {
         map.put("showcaseList",displayVos);
         return map;
     }
-    @Override
-    public List<String> showRe() {
-        return entryDao.showRecommendations();
-    }
 }

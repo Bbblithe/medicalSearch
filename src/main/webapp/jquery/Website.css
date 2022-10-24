@@ -123,12 +123,6 @@ input {
 	float:left;
 }
 
-.DaoHang a{
-	display: block;
-	margin-left:150px;
-	padding-top:30px;
-	font-size: 18px;
-}
 .DaoHang a div{
 	font-size: 14px;
 }
