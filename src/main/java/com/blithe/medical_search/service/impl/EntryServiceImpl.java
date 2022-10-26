@@ -41,6 +41,7 @@ public class EntryServiceImpl implements EntryService {
     public Map<String,Object> showAllExplain(String sentence,boolean flag) throws Exception {
         Map<String,Object> map = new HashMap<>();
         Set<String> ids = new HashSet<>();
+        Set<String> temp = new HashSet<>();
         List<String> words = LanguageUtils.Participle(sentence);
         for(String word:words){
             Entry entry;
@@ -50,8 +51,11 @@ public class EntryServiceImpl implements EntryService {
                 entry = entryDao.chineseQueryId(word);
             }
             if(entry != null){
-                ids.addAll(entryDao.searchSynId(entry.getSynId()));
-                ids.addAll(entryDao.searchSonId(entry.getId()));
+                temp.addAll(entryDao.searchSynId(entry.getSynId()));
+                for(String id : temp){
+                    ids.addAll(entryDao.searchSonId(id));
+                }
+                ids.addAll(temp);
             }
         }
         if(ids.size() == 0){

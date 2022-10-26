@@ -119,6 +119,12 @@ input {
 }
  */
 
+.DaoHang a{
+    display: block;
+    margin-left:150px;
+    font-size: 18px;
+}
+
 .DaoHang .right{
 	float:left;
 }
