@@ -50,6 +50,7 @@
         </div>
            <br>
       </c:forEach>
+    <br><br>
   </div>
 </c:if>
 <c:if test="${map.count==0}">

@@ -27,7 +27,7 @@
 
 .Conteny h3{
     text-align: center;
-    margin-top:100px;
+    margin-top:50px;
     font-size: 40px;
     font-weight: bold;
     font-family: 汉仪旗黑Y2-75W,'Courier New', Courier, monospace;
@@ -42,10 +42,10 @@
 }
 
 .Conteny .DKuang{
-    height: 65px;
-    width:1015px;
+    height: 50px;
+    width:850px;
     margin-top: 60px;
-    margin-left: 170px;
+    margin-left: 250px;
     border: 3px solid;
     border-radius: 15px;
     border-color: #000;
@@ -55,19 +55,19 @@
 .Conteny .DKuang .Pic{
     padding-left: 5px;
     padding-top:3px;
-    width: 44px;
+    width: 35px;
     position: absolute;
     float: left;
 }
 
 .Conteny .DKuang .InputKuang{
-    height:53px;
+    height:35px;
     width: 945px;
     margin-left:60px;
-    margin-top:3px;
+    margin-top:5px;
     float:left;
     position: absolute;
-    font-size: 40px;
+    font-size: 20px;
     line-height: 61px;
     font-weight: 100;
     font-family: 宋体,'Courier New', Courier, monospace;
@@ -92,7 +92,7 @@ input {
 }
 
 .DaoHang .Chinese{
-    padding-left: 180px;
+    padding-left: 250px;
 	padding-top: 30px;
     font-size: 18px;
     color: #000;
@@ -100,7 +100,7 @@ input {
 }
 
 .DaoHang .English{
-	padding-left: 180px;
+	padding-left: 250px;
 	font-size: 14px;
 	color: #000;
 	display: block;
@@ -110,27 +110,14 @@ input {
 	font-size:14px;
 }
 
-/* .DaoHang li{
-    list-style: none;
-    margin-top:40px;
-    padding-left:470px;
-    font-size: 18px;
-    color: #000;
-}
- */
-
 .DaoHang a{
     display: block;
     margin-left:150px;
-    font-size: 18px;
+    font-size: 13px;
 }
 
 .DaoHang .right{
 	float:left;
-}
-
-.DaoHang a div{
-	font-size: 14px;
 }
 
 .foot{
