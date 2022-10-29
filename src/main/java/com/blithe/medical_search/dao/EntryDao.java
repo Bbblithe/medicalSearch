@@ -23,7 +23,7 @@ public interface EntryDao {
     @Select("select id,chinese,english,synId from table_entry where Chinese = #{word} and synId is not null")
     public Entry chineseQueryId(String word);
 
-    @Select("select id,chinese,english,synId from table_entry where BINARY English = #{word} and synId is not null")
+    @Select("select id,chinese,english,synId from table_entry where English = #{word} and synId is not null limit 1")
     public Entry englishQueryId(String word);
 
     @Select("select id from table_entry_relationship where fatherId = #{id} ")

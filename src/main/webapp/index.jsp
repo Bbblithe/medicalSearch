@@ -41,16 +41,17 @@
 </head>
 <body>
 <!-- 边框与Logo -->
-<div class="goods Wrapper">
-  <div class="TopKuang"></div>
-  <div class="LogoPlace" style="background-color: white"> <img src="#" alt=""> </div>
-</div>
-<!-- 搜索框 -->
-<div class="Conteny Wrapper">
-  <h3>专注育龄期癫痫女性患者的管理</h3>
-  <h4>For management of childbearing-age women with epilepsy</h4>
+<%--    <div class="goods Wrapper">--%>
+<%--      <div class="TopKuang"></div>--%>
+<%--      <div class="LogoPlace" style="background-color: white"> <img src="#" alt=""> </div>--%>
+<%--    </div>--%>
+<!-- 搜索框与Logo -->
+<div class="Conteny">
+  <img src="${pageContext.request.contextPath}/img/Logo.png" alt="" class="Logo">
+  <h3>育龄期女性癫痫患者全程管理问答系统</h3>
+  <h4>Question answering system for management of women with epilepsy of child-bearing age</h4>
   <div class="DKuang">
-     <img src="img/搜索Logo.png" alt="" class="Pic" onclick="search()">
+    <img src="${pageContext.request.contextPath}/img/SearchLogo.png" alt="" class="Pic" onclick="search()">
     <%-- <button  class="glyphicon glyphicon-search"></button> --%>
     <input type="text" id="search_text" class="InputKuang" placeholder="您想搜索什么呢？">
   </div>
@@ -64,25 +65,25 @@
   <div class="right" id="recommendation">
     <br><br>
     <a style="text-decoration: none; cursor: pointer;" onclick="window.location.href='entry/search.do?sentence=妊娠期抗癫痫治疗的注意事项'">妊娠期抗癫痫治疗的注意事项</a>
-    <a style="text-decoration: none; cursor: pointer; font-size: 15px" onclick="window.location.href='entry/search.do?sentence=Anti-epileptic treatment during Pregnancy'" >Anti-epileptic treatment during pregnancy</a>
+    <a style="text-decoration: none; cursor: pointer; font-size: 14px" onclick="window.location.href='entry/search.do?sentence=Anti-epileptic treatment during Pregnancy'" >Anti-epileptic treatment during pregnancy</a>
     <br>
     <a style="text-decoration: none; cursor: pointer;" onclick="window.location.href='entry/search.do?sentence=哺乳期是否可以服用左乙拉西坦'">哺乳期是否可以服用左乙拉西坦</a>
-    <a style="text-decoration: none; cursor: pointer; font-size: 15px" onclick="window.location.href='entry/search.do?sentence=Can patients take Levetiracetam while breastfeeding'" >Can patients take levetiracetam while breastfeeding</a>
+    <a style="text-decoration: none; cursor: pointer; font-size: 14px" onclick="window.location.href='entry/search.do?sentence=Can patients take Levetiracetam while breastfeeding'" >Can patients take levetiracetam while breastfeeding</a>
     <br>
-    <a style="text-decoration: none; cursor: pointer;" onclick="window.location.href='entry/search.do?sentence=可能导致肥胖的抗癫痫药物'">可能导致肥胖的抗癫痫药物</a>
-    <a style="text-decoration: none; cursor: pointer; font-size: 15px" onclick="window.location.href='entry/search.do?sentence=Antiseizure medications  causing obesity'" >Anti-epileptic drugs causing obesity</a>
-    <br>
-    <a style="text-decoration: none; cursor: pointer;" onclick="window.location.href='entry/search.do?sentence=丙戊酸钠是否有致畸性'">丙戊酸钠是否有致畸性</a>
-    <a style="text-decoration: none; cursor: pointer; font-size: 15px" onclick="window.location.href='entry/search.do?sentence=Sodium valproate'" >Does Sodium valproate have teratogenicity</a>
-    <br>
-    <a style="text-decoration: none; cursor: pointer;" onclick="window.location.href='entry/search.do?sentence=了解更多：卡马西平'">了解更多：卡马西平</a>
-    <a style="text-decoration: none; cursor: pointer; font-size: 15px" onclick="window.location.href='entry/search.do?sentence=Learn more about Carbamazepine'" >Learn more about Carbamazepine</a>
+    <%--    <a style="text-decoration: none; cursor: pointer;" onclick="window.location.href='entry/search.do?sentence=可能导致肥胖的抗癫痫药物'">可能导致肥胖的抗癫痫药物</a>--%>
+    <%--    <a style="text-decoration: none; cursor: pointer; font-size: 15px" onclick="window.location.href='entry/search.do?sentence=Antiseizure medications  causing obesity'" >Anti-epileptic drugs causing obesity</a>--%>
+    <%--    <br>--%>
+    <%--    <a style="text-decoration: none; cursor: pointer;" onclick="window.location.href='entry/search.do?sentence=丙戊酸钠是否有致畸性'">丙戊酸钠是否有致畸性</a>--%>
+    <%--    <a style="text-decoration: none; cursor: pointer; font-size: 15px" onclick="window.location.href='entry/search.do?sentence=Sodium valproate'" >Does Sodium valproate have teratogenicity</a>--%>
+    <%--    <br>--%>
+    <%--    <a style="text-decoration: none; cursor: pointer;" onclick="window.location.href='entry/search.do?sentence=了解更多：卡马西平'">了解更多：卡马西平</a>--%>
+    <%--    <a style="text-decoration: none; cursor: pointer; font-size: 15px" onclick="window.location.href='entry/search.do?sentence=Learn more about Carbamazepine'" >Learn more about Carbamazepine</a>--%>
     <br>
   </div>
 </div>
 <!-- 页脚 -->
 <div class="foot Wrapper" style="position: fixed;bottom: 0">
-  <span>联系我们/Contact us：leilei_25@126.com | 访问我们的本体/About our ontology：<a href="https://bioportal.bioontology.org/ontologies/CAWWEO">https://bioportal.bioontology.org/ontologies/CAWWEO</a></span>
+  <span >联系我们/Contact us：leilei_25@126.com | 访问我们的本体/About our ontology：<a href="https://bioportal.bioontology.org/ontologies/CAWWEO">https://bioportal.bioontology.org/ontologies/CAWWEO</a></span>
 </div>
 </body>
 </html>

@@ -3,55 +3,26 @@
     margin: 0 auto;
 }
 
-.goods .TopKuang{
-    width: 1337px;
-    height: 40px;
-    border: 1px solid;
-    margin: 0 auto;
-    border-color: #2f528f;
+.goods {
+    height: 200px;
+    background-image: linear-gradient(to right, #327cb4, #e74a8a);
+    position:relative;
 }
 
-.goods{
-    position: relative;
-}
-
-.goods .LogoPlace{
+.goods .Logo{
+    margin-top: 20px;
+    margin-left: 90px;
+    width: 160px;
     position: absolute;
-    width: 220px;
-    height: 105px;
-    border: 1px solid;
-    margin-top: -2%;
-    margin-left: 35px;
-    border-color: #a5a5a5;
 }
 
-.Wrapper{
-    width: 1340px;
-    margin: 0 auto;
+.goods .WenZi1{
+    float: right;
+    color:white;
+    font-size: 10px;
+    margin-top: 120px;
+    margin-left: 950px;
 }
-
-.goods .TopKuang{
-    width: 1337px;
-    height: 40px;
-    border: 1px solid;
-    margin: 0 auto;
-    border-color: #2f528f;
-}
-
-.goods{
-    position: relative;
-}
-
-.goods .LogoPlace{
-    position: absolute;
-    width: 220px;
-    height: 105px;
-    border: 1px solid;
-    margin-top: -2%;
-    margin-left: 35px;
-    border-color: #a5a5a5;
-}
-
 .goods .RightBorder{
     position: absolute;
     width: 15px;
@@ -85,7 +56,7 @@
 }
 
 .Title{
-    margin-top: 145px;
+    margin-top: 50px;
 }
 
 .Title .Question{
@@ -141,7 +112,8 @@
 }
 
 .Content .Answer{
-    padding-top: 40px;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 .bottom_right {

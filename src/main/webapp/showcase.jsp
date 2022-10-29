@@ -20,9 +20,15 @@
 </head>
 <body>
 <!-- 边框与Logo -->
-<div class="goods Wrapper">
-  <div class="TopKuang"></div>
-  <div class="LogoPlace" style="background-color: white"> <img src="#" alt=""> </div>
+<div class="goods">
+  <%--  <div class="TopKuang"></div>--%>
+  <%--  <div class="LogoPlace" style="background-color: white"> <img src="#" alt=""> </div>--%>
+  <img src="${pageContext.request.contextPath}/img/Logo.png" alt="" class="Logo">
+  <div class="WenZi1">
+    本网页专注育龄期女性癫痫全程规范药物治疗，可提供不同时期各类抗癫痫药物的指南查询
+    This webpage focuses on the standardized antiepileptic drug use in women with epilepsy of child-bearing age,
+    and provides guidelines on various types of antiepileptic drugs for women in different child-bearing periods
+  </div>
 </div>
 <!-- Title标题 -->
 <div class="Title Middle">
@@ -43,15 +49,15 @@
 
 <!-- 解答内容 -->
 <c:if test="${map.count!=0}">
-  <div class="Content Middle">
-      <c:forEach items="${map.showcaseList}" var="a">
+    <c:forEach items="${map.showcaseList}" var="a">
+      <div class="Content Middle margin">
         <div class="Answer">
           <p style="color: slategrey">${a.chinese}/${a.english}</p> <p style="color: grey">(${a.tag}):</p>${a.content}
         </div>
-           <br>
-      </c:forEach>
+      </div>
+      <br>
+    </c:forEach>
     <br><br>
-  </div>
 </c:if>
 <c:if test="${map.count==0}">
   <script type="text/javascript">

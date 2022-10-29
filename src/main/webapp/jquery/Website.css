@@ -3,74 +3,91 @@
     margin: 0 auto;
 }
 
-.goods .TopKuang{
-    width: 1337px;
-    height: 40px;
-    border: 1px solid;
-    margin: 0 auto;
-    border-color: #2f528f;
-}
+/*.goods .TopKuang{*/
+/*    width: 1337px;*/
+/*    height: 40px;*/
+/*    border: 1px solid;*/
+/*    margin: 0 auto;*/
+/*    border-color: #2f528f;*/
+/*}*/
 
 .goods{
     position: relative;
 }
 
-.goods .LogoPlace{
-    position: absolute;
-    width: 220px;
-    height: 105px;
-    border: 1px solid;
-    margin-top: -2%;
-    margin-left: 35px;
-    border-color: #a5a5a5;
+/*.bgc{*/
+
+/*    margin-top:0;*/
+/*    background-image: linear-gradient(to right, #327cb4, #e74a8a);*/
+/*}*/
+/*.goods .LogoPlace{*/
+/*    position: absolute;*/
+/*    width: 220px;*/
+/*    height: 105px;*/
+/*    border: 1px solid;*/
+/*    margin-top: -2%;*/
+/*    margin-left: 35px;*/
+/*    border-color: #a5a5a5;*/
+/*}*/
+.Conteny{
+    background-image: linear-gradient(to right, #327cb4, #e74a8a);
+    height: 420px;
+}
+
+.Conteny .Logo{
+    width:130px;
+    margin-top: 25px;
+    margin-left:45%;
 }
 
 .Conteny h3{
     text-align: center;
-    margin-top:50px;
+    margin-top:40px;
     font-size: 40px;
-    font-weight: bold;
-    font-family: 汉仪旗黑Y2-75W,'Courier New', Courier, monospace;
-    color: #000;
+    font-weight: normal;
+    font-family: 微软雅黑,'Courier New', Courier, monospace;;
+    color:#f9faf0;
 }
 
 .Conteny h4{
     text-align: center;
-    font-weight: bold;
-	font-family: Soho Gothic,'Courier New', Courier, monospace;
-	font-size: 20px;
+    font-weight: normal;
+    font-family: 微软雅黑,'Courier New', Courier, monospace;;
+    color:#f9faf0;
+	font-size: 16px;
 }
 
 .Conteny .DKuang{
     height: 50px;
-    width:850px;
-    margin-top: 60px;
-    margin-left: 250px;
-    border: 3px solid;
-    border-radius: 15px;
-    border-color: #000;
-   
+    width:690px;
+    /*margin-top: 60px;*/
+    /*margin-left: 300px;*/
+    margin:80px auto;
+    border-radius: 10px;
+    background-color: white;
+    position:relative;
+    top: -30px;
 }
 
 .Conteny .DKuang .Pic{
-    padding-left: 5px;
-    padding-top:3px;
+    margin-right: 20px;
+    margin-top:5px;
     width: 35px;
-    position: absolute;
-    float: left;
+    cursor: pointer;
+    float: right;
 }
 
 .Conteny .DKuang .InputKuang{
     height:35px;
-    width: 945px;
-    margin-left:60px;
-    margin-top:5px;
+    width: 625px;
+    margin-left:10px;
+    margin-top:7px;
     float:left;
     position: absolute;
     font-size: 20px;
     line-height: 61px;
-    font-weight: 100;
-    font-family: 宋体,'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-family: '微软雅黑','Courier New', Courier, monospace;
 }
 
 input::-webkit-input-placeholder {
@@ -92,18 +109,25 @@ input {
 }
 
 .DaoHang .Chinese{
-    padding-left: 250px;
-	padding-top: 30px;
+    padding-left: 325px;
+	padding-top: 40px;
     font-size: 18px;
     color: #000;
 	display: block;
+    font-family: '微软雅黑','Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 .DaoHang .English{
-	padding-left: 250px;
+	padding-left: 325px;
 	font-size: 14px;
 	color: #000;
 	display: block;
+    font-weight: bold;
+}
+
+.margin{
+    margin-top: 5px;
 }
 
 .DaoHang .Special{
@@ -112,8 +136,11 @@ input {
 
 .DaoHang a{
     display: block;
-    margin-left:150px;
-    font-size: 13px;
+    font-size: 18px;
+    font-family: '微软雅黑','Courier New', Courier, monospace;
+    margin-left:50px;
+    font-weight: bold;
+    color: #000;
 }
 
 .DaoHang .right{
@@ -121,59 +148,18 @@ input {
 }
 
 .foot{
-    margin-top:410px;
-    margin-left:110px;
+    margin-left:350px;
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: #d9d9d9;
     height: 35px;
-    width:1150px;
+    width:850px;
     line-height: 35px;
 }
 
 .foot span{
-    color:#272727;
-    padding-left: 57px;
-	font-size: 14px;
-	font-family: '等线 (正文)','Courier New', Courier, monospace;;
+    font-family: '微软雅黑', 'Courier New', Courier, monospace;
+    font-weight:bold;
+    padding-left: 120px;
 }
 
-.Title{
-    margin-top: 145px;
-}
-
-.Title .Question{
-    font-size: 25px;
-}
-
-.Title .QuestionEnglish{
-    font-size: 17px;
-}
-
-.Title .AnswerTitle{
-    margin-top: 15px;
-
-}
-
-.Title .AnswerTitle h1{
-    padding:0;
-    margin:0;
-    font-size: 25px;
-    font-weight: normal;
-}
-
-.Title .AnswerTitle h2{
-    padding:0;
-    margin:0;
-    font-size: 15px;
-    font-weight: normal;
-}
-
-.Content{
-    border: 1px solid;
-    border-color: #d9d9d9;
-}
-
-.Content .Answer{
-    padding-top: 40px;
-}

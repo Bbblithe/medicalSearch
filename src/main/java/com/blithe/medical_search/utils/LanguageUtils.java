@@ -17,12 +17,28 @@ import java.util.StringTokenizer;
 public class LanguageUtils {
    public static List<String>  Participle(String sentence){
       List<String> wordList = new ArrayList<>();
+      sentence = sentence.replaceAll("[\\pP\\p{Punct}]","");
       if(isEnglish(sentence)){
+         List<String> tempList = new ArrayList<>();
+
          StringTokenizer st = new StringTokenizer(sentence," ,?.!:\"\"''\n#");
          while (st.hasMoreElements()) {
-            wordList.add(st.nextToken());
+            tempList.add(st.nextToken());
          }
-         wordList.add(sentence);
+         String tempS = "";
+         String[] tempString = tempList.toArray(new String[0]);
+         for(int i = 1 ; i <= tempString.length ; i ++){ // 大小
+            for(int j = 0 ; (j + i) <= tempString.length  ; j ++){ // 下标
+               for(int k = 0 ; k < i ; k ++){
+                  tempS += tempString[j+k];
+                  if(k+1 < i) {
+                     tempS += " ";
+                  }
+               }
+               wordList.add(tempS);
+               tempS = "";
+            }
+         }
          return wordList;
       }
 
