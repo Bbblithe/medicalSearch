@@ -47,7 +47,7 @@
 <%--    </div>--%>
 <!-- 搜索框与Logo -->
 <div class="Conteny">
-  <img src="${pageContext.request.contextPath}/img/Logo.png" alt="" class="Logo">
+  <img src="${pageContext.request.contextPath}/img/logo.jpg" alt="" class="Logo">
   <h3>育龄期女性癫痫患者全程管理问答系统</h3>
   <h4>Question answering system for management of women with epilepsy of child-bearing age</h4>
   <div class="DKuang">
@@ -83,7 +83,7 @@
 </div>
 <!-- 页脚 -->
 <div class="foot Wrapper" style="position: fixed;bottom: 0">
-  <span >联系我们/Contact us：leilei_25@126.com | 访问我们的本体/About our ontology：<a href="https://bioportal.bioontology.org/ontologies/CAWWEO">https://bioportal.bioontology.org/ontologies/CAWWEO</a></span>
+  联系我们/Contact us：leilei_25@126.com | 访问我们的本体/About our ontology：<a href="https://bioportal.bioontology.org/ontologies/CAWWEO">https://bioportal.bioontology.org/ontologies/CAWWEO</a>
 </div>
 </body>
 </html>

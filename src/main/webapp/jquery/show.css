@@ -21,7 +21,6 @@
     color:white;
     font-size: 10px;
     margin-top: 120px;
-    margin-left: 950px;
 }
 .goods .RightBorder{
     position: absolute;
@@ -96,8 +95,8 @@
 }
 
 .foot{
-    margin: 0 auto;
-    width: 1340px;
+    width: 100%;
+    text-align: center;
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: #d9d9d9;
