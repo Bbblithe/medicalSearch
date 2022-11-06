@@ -21,11 +21,11 @@
 <body>
 <!-- 边框与Logo -->
 <div class="goods">
-   <img src="${pageContext.request.contextPath}/img/logo.jpg" alt="" class="Logo">
+   <img style="transform: rotate(315deg)" src="${pageContext.request.contextPath}/img/logo.jpg" alt="" class="Logo">
   <div class="WenZi1">
-    本网页专注育龄期女性癫痫全程规范药物治疗，可提供不同时期各类抗癫痫药物的指南查询<br>
-    This webpage focuses on the standardized antiepileptic drug use in women with epilepsy<br> of child-bearing age,
-    and provides guidelines on various types of antiepileptic drugs for<br> women in different child-bearing periods
+    本网页专注育龄期女性癫痫全程规范药物治疗，可提供不同时期各类抗癫痫药物的指南查询
+    This webpage focuses on the standardized antiepileptic drug use in women with epilepsy of child-bearing age,
+    and provides guidelines on various types of antiepileptic drugs for women in different child-bearing periods
   </div>
 </div>
 <!-- Title标题 -->

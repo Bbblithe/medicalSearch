@@ -47,7 +47,7 @@
 <%--    </div>--%>
 <!-- 搜索框与Logo -->
 <div class="Conteny">
-  <img src="${pageContext.request.contextPath}/img/logo.jpg" alt="" class="Logo">
+  <img style="transform: rotate(315deg)" src="${pageContext.request.contextPath}/img/logo.jpg" alt="" class="Logo">
   <h3>育龄期女性癫痫患者全程管理问答系统</h3>
   <h4>Question answering system for management of women with epilepsy of child-bearing age</h4>
   <div class="DKuang">

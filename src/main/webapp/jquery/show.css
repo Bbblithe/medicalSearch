@@ -1,3 +1,7 @@
+body{
+    font-family: '汉仪旗黑Y2-75W', 'Soho Gothic', Courier, monospace;
+}
+
 .Wrapper{
     width: 1340px;
     margin: 0 auto;
@@ -16,11 +20,16 @@
     position: absolute;
 }
 
+.WenZi1{
+    position: absolute;
+    bottom: 5px;
+    right: 3px;
+    width: 500px;
+}
+
 .goods .WenZi1{
-    float: right;
     color:white;
     font-size: 10px;
-    margin-top: 120px;
 }
 .goods .RightBorder{
     position: absolute;
@@ -91,7 +100,6 @@
     color:#272727;
     padding-left: 57px;
     font-size: 14px;
-    font-family: '等线 (正文)','Courier New', Courier, monospace;;
 }
 
 .foot{

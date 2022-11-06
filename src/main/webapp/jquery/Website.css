@@ -1,3 +1,7 @@
+body{
+    font-family: '汉仪旗黑Y2-75W', 'Soho Gothic', Courier, monospace;
+}
+
 .Wrapper{
     width: 1340px;
     margin: 0 auto;
@@ -30,6 +34,7 @@
 /*    border-color: #a5a5a5;*/
 /*}*/
 .Conteny{
+    line-height: 1px;
     background-image: linear-gradient(to right, #327cb4, #e74a8a);
     height: 420px;
 }
@@ -45,14 +50,12 @@
     margin-top:40px;
     font-size: 40px;
     font-weight: normal;
-    font-family: 微软雅黑,'Courier New', Courier, monospace;;
     color:#f9faf0;
 }
 
 .Conteny h4{
     text-align: center;
     font-weight: normal;
-    font-family: 微软雅黑,'Courier New', Courier, monospace;;
     color:#f9faf0;
 	font-size: 16px;
 }
@@ -87,7 +90,6 @@
     font-size: 20px;
     line-height: 20px;
     font-weight: bold;
-    font-family: '微软雅黑','Courier New', Courier, monospace;
 }
 
 input::-webkit-input-placeholder {
@@ -114,7 +116,6 @@ input {
     font-size: 18px;
     color: #000;
 	display: block;
-    font-family: '微软雅黑','Courier New', Courier, monospace;
     font-weight: bold;
 }
 
@@ -137,7 +138,6 @@ input {
 .DaoHang a{
     display: block;
     font-size: 18px;
-    font-family: '微软雅黑','Courier New', Courier, monospace;
     margin-left:50px;
     font-weight: bold;
     color: #000;
@@ -148,6 +148,7 @@ input {
 }
 
 .foot{
+    width: 100%;
     text-align: center;
     border-top: 1px solid;
     border-bottom: 1px solid;
@@ -157,7 +158,6 @@ input {
 }
 
 .foot span{
-    font-family: '微软雅黑', 'Courier New', Courier, monospace;
     font-weight:bold;
     padding-left: 120px;
 }
