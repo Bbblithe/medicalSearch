@@ -1,91 +1,79 @@
-body{
+@font-face {
+    font-family: "汉仪旗黑Y2-75W";
+    src: url("../font/汉仪旗黑Y2-75W.ttf");
+}
+
+@font-face {
+    font-family: "Soho Gothic";
+    src: url("../font/SOHO_GOTHIC.TTF");
+}
+
+body {
     font-family: '汉仪旗黑Y2-75W', 'Soho Gothic', Courier, monospace;
 }
 
-.Wrapper{
+.Wrapper {
     width: 1340px;
     margin: 0 auto;
 }
 
-/*.goods .TopKuang{*/
-/*    width: 1337px;*/
-/*    height: 40px;*/
-/*    border: 1px solid;*/
-/*    margin: 0 auto;*/
-/*    border-color: #2f528f;*/
-/*}*/
-
-.goods{
+.goods {
     position: relative;
 }
 
-/*.bgc{*/
-
-/*    margin-top:0;*/
-/*    background-image: linear-gradient(to right, #327cb4, #e74a8a);*/
-/*}*/
-/*.goods .LogoPlace{*/
-/*    position: absolute;*/
-/*    width: 220px;*/
-/*    height: 105px;*/
-/*    border: 1px solid;*/
-/*    margin-top: -2%;*/
-/*    margin-left: 35px;*/
-/*    border-color: #a5a5a5;*/
-/*}*/
-.Conteny{
+.Conteny {
     line-height: 1px;
     background-image: linear-gradient(to right, #327cb4, #e74a8a);
     height: 420px;
 }
 
-.Conteny .Logo{
-    width:130px;
+.Conteny .Logo {
+    width: 130px;
     margin-top: 25px;
-    margin-left:45%;
+    margin-left: 45%;
 }
 
-.Conteny h3{
+.Conteny h3 {
     text-align: center;
-    margin-top:40px;
+    margin-top: 40px;
     font-size: 40px;
     font-weight: normal;
-    color:#f9faf0;
+    color: #f9faf0;
 }
 
-.Conteny h4{
+.Conteny h4 {
     text-align: center;
     font-weight: normal;
-    color:#f9faf0;
-	font-size: 16px;
+    color: #f9faf0;
+    font-size: 16px;
 }
 
-.Conteny .DKuang{
+.Conteny .DKuang {
     height: 50px;
-    width:690px;
+    width: 690px;
     /*margin-top: 60px;*/
     /*margin-left: 300px;*/
-    margin:80px auto;
+    margin: 80px auto;
     border-radius: 10px;
     background-color: white;
-    position:relative;
+    position: relative;
     top: -30px;
 }
 
-.Conteny .DKuang .Pic{
+.Conteny .DKuang .Pic {
     margin-right: 20px;
-    margin-top:5px;
+    margin-top: 5px;
     width: 35px;
     cursor: pointer;
     float: right;
 }
 
-.Conteny .DKuang .InputKuang{
-    height:35px;
+.Conteny .DKuang .InputKuang {
+    height: 35px;
     width: 625px;
-    margin-left:10px;
-    margin-top:7px;
-    float:left;
+    margin-left: 10px;
+    margin-top: 7px;
+    float: left;
     position: absolute;
     font-size: 20px;
     line-height: 20px;
@@ -101,53 +89,53 @@ input::-webkit-input-placeholder {
 }
 
 input {
-    border: 0; 
-    outline: none; 
+    border: 0;
+    outline: none;
     background-color: rgba(0, 0, 0, 0);
 }
 
-.DaoHang .left{
-	float:left;
+.DaoHang .left {
+    float: left;
 }
 
-.DaoHang .Chinese{
+.DaoHang .Chinese {
     padding-left: 325px;
-	padding-top: 40px;
+    padding-top: 40px;
     font-size: 18px;
     color: #000;
-	display: block;
+    display: block;
     font-weight: bold;
 }
 
-.DaoHang .English{
-	padding-left: 325px;
-	font-size: 14px;
-	color: #000;
-	display: block;
+.DaoHang .English {
+    padding-left: 325px;
+    font-size: 14px;
+    color: #000;
+    display: block;
     font-weight: bold;
 }
 
-.margin{
+.margin {
     margin-top: 5px;
 }
 
-.DaoHang .Special{
-	font-size:14px;
+.DaoHang .Special {
+    font-size: 14px;
 }
 
-.DaoHang a{
+.DaoHang a {
     display: block;
     font-size: 18px;
-    margin-left:50px;
+    margin-left: 50px;
     font-weight: bold;
     color: #000;
 }
 
-.DaoHang .right{
-	float:left;
+.DaoHang .right {
+    float: left;
 }
 
-.foot{
+.foot {
     width: 100%;
     text-align: center;
     border-top: 1px solid;
@@ -157,8 +145,8 @@ input {
     line-height: 35px;
 }
 
-.foot span{
-    font-weight:bold;
+.foot span {
+    font-weight: bold;
     padding-left: 120px;
 }
 

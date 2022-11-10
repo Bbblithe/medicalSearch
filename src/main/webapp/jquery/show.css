@@ -1,8 +1,18 @@
-body{
+@font-face {
+    font-family: "汉仪旗黑Y2-75W";
+    src: url("../font/汉仪旗黑Y2-75W.ttf");
+}
+
+@font-face {
+    font-family: "Soho Gothic";
+    src: url("../font/SOHO_GOTHIC.TTF");
+}
+
+body {
     font-family: '汉仪旗黑Y2-75W', 'Soho Gothic', Courier, monospace;
 }
 
-.Wrapper{
+.Wrapper {
     width: 1340px;
     margin: 0 auto;
 }
@@ -10,99 +20,107 @@ body{
 .goods {
     height: 200px;
     background-image: linear-gradient(to right, #327cb4, #e74a8a);
-    position:relative;
+    position: relative;
 }
 
-.goods .Logo{
+.goods .Logo {
     margin-top: 20px;
     margin-left: 90px;
     width: 160px;
     position: absolute;
 }
 
-.WenZi1{
+.WenZi1 {
     position: absolute;
     bottom: 5px;
     right: 3px;
-    width: 500px;
+    width: 520px;
 }
 
-.goods .WenZi1{
-    color:white;
-    font-size: 10px;
+.top_C{
+    font-size: 13px;
 }
-.goods .RightBorder{
+
+.top_E{
+    font-size: 9px;
+}
+
+.goods .WenZi1 {
+    color: white;
+}
+
+.goods .RightBorder {
     position: absolute;
     width: 15px;
     height: 715px;
-    padding-left:1323px;
+    padding-left: 1323px;
 
 }
 
-.goods .RightBorder .divone{
-    height:120px;
+.goods .RightBorder .divone {
+    height: 120px;
     border: 1px solid;
     border-color: #000;
 
 }
 
-.goods .RightBorder .divtwo{
-    height:110px;
+.goods .RightBorder .divtwo {
+    height: 110px;
     border: 1px solid;
     border-color: #000;
 }
 
-.goods .RightBorder .divthree{
-    height:450px;
+.goods .RightBorder .divthree {
+    height: 450px;
     border: 1px solid;
     border-color: #000;
 }
 
-.Middle{
+.Middle {
     width: 1235px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.Title{
+.Title {
     margin-top: 50px;
 }
 
-.Title .Question{
+.Title .Question {
     font-size: 25px;
 }
 
-.Title .QuestionEnglish{
+.Title .QuestionEnglish {
     font-size: 17px;
 }
 
-.Title .AnswerTitle{
+.Title .AnswerTitle {
     margin-top: 15px;
 
 }
 
-.Title .AnswerTitle h1{
-    padding:0;
-    margin:0;
+.Title .AnswerTitle h1 {
+    padding: 0;
+    margin: 0;
     font-size: 25px;
     font-weight: normal;
 }
 
-.Title .AnswerTitle h2{
-    padding:0;
-    margin:0;
+.Title .AnswerTitle h2 {
+    padding: 0;
+    margin: 0;
     font-size: 15px;
     font-weight: normal;
 }
 
-.foot span{
+.foot span {
     line-height: 35px;
     text-align: center;
-    color:#272727;
+    color: #272727;
     padding-left: 57px;
     font-size: 14px;
 }
 
-.foot{
+.foot {
     width: 100%;
     text-align: center;
     border-top: 1px solid;
@@ -113,12 +131,12 @@ body{
     background-color: white;
 }
 
-.Content{
+.Content {
     border: 1px solid;
     border-color: #d9d9d9;
 }
 
-.Content .Answer{
+.Content .Answer {
     padding-top: 15px;
     padding-bottom: 10px;
 }
