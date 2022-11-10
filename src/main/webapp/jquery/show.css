@@ -5,11 +5,11 @@
 
 @font-face {
     font-family: "Soho Gothic";
-    src: url("../font/SOHO_GOTHIC.TTF");
+    src: url("../font/Soho_Gothic.TTF");
 }
 
 body {
-    font-family: '汉仪旗黑Y2-75W', 'Soho Gothic', Courier, monospace;
+    font-family:'Soho Gothic','汉仪旗黑Y2-75W', Courier, monospace;
 }
 
 .Wrapper {
@@ -37,11 +37,11 @@ body {
     width: 520px;
 }
 
-.top_C{
+.top_C {
     font-size: 13px;
 }
 
-.top_E{
+.top_E {
     font-size: 9px;
 }
 
